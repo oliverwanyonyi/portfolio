@@ -1,0 +1,21 @@
+{
+  "name": "potfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "build:css": "tailwindcss - i ./src/styles.css -o ./dist/styles.css",
+  "watch:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+},
+
+  "keywords": [],
+  "author": "Oliver Wanyonyi",
+  "license": "ISC",
+  "description": "Tailwind css",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss-cli": "^11.0.0"
+  }
+}

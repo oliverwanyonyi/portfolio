@@ -1,0 +1,119 @@
+.container{
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.section-title{
+    color: transparent;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgb(30 64 175 / 1);
+    text-align: center;
+}
+
+.c-title{
+    color: transparent;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgb(30 64 175 / 1);
+    text-align: center;
+}
+
+
+.about-tab{
+    padding: 10px 14px;
+    font-weight: 500;
+}
+.about-tab.active-tab{
+    color:rgb(30 64 175 / 1) ;
+}
+.tab-content{
+    display: none;
+}
+
+.tab-content.show{
+    display: block;
+}
+
+section{
+    padding: 40px 0;
+}
+
+
+.inset-shadow{
+    box-shadow: -11px -27px 48px -10px rgba(0,0,0,0.44) inset;
+}
+
+/* navbar */
+.btn {
+    transition: all 0.3s ease-in-out;
+    width: 3rem ;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #3b82f6 ;
+    color: #ffff;
+    z-index: 100;
+    border: 2px solid #3b82f6;
+    transition: 500ms;
+  }
+#navTrigger.active {
+    transform: rotate(-45deg);
+    background: transparent;
+   
+}
+
+#navTrigger.active i{
+    color: #3b82f6!important;
+}
+  .nav-container {
+    position: fixed;
+    width: min-content;
+    height: min-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 40;
+    background: red;
+    transition: 500ms;
+  }
+ 
+  .nav-container.active {
+    visibility: visible;
+  }
+  .nav-container.active .nav-btn {
+    transform: scale(1);
+    opacity:1
+  }
+ 
+  .nav-container .nav-btn {
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transition: 500ms;
+  } 
+   .nav-container.active .nav-btn:nth-child(1) {
+    transform: translateY(-100px);
+    
+  }
+  .nav-container.active .about {
+    transform: translateY(-100px);
+  }
+
+  .nav-container.active .nav-btn:nth-child(2) {
+    transform: translateX(100px);
+  }
+  .nav-container.active .nav-btn:nth-child(3) {
+    transform: translateY(100px);
+  }
+  .nav-container.active .nav-btn:nth-child(4) {
+    transform: translateX(-100px);
+  } 
